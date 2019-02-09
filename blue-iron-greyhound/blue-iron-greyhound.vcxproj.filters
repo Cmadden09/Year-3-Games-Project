@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="OpenglUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="AssimpLoader.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshComponent.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="openglRenderer.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="IronRiftsPhysicsSystem.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="RigidBodyComponent.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="AISystem.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="MovementComponent.cpp">
+      <Filter>Input/Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLInputSystem.cpp">
+      <Filter>Input/Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="IrrKlangAudioSystem.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLGLTextureLoader.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Low Level Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>Low Level Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraComponent.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="TestComponent.cpp">
+      <Filter>Depricated</Filter>
+    </ClCompile>
+    <ClCompile Include="InteractiveTestComponent.cpp">
+      <Filter>Depricated</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionSystem.cpp">
+      <Filter>Depricated</Filter>
+    </ClCompile>
+    <ClCompile Include="OBB.cpp">
+      <Filter>Physics\Bounding Volumes</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerMechanicsComponent.cpp" />
+    <ClCompile Include="AIMechanicsComponent.cpp" />
+    <ClCompile Include="md2model.cpp">
+      <Filter>Graphics\MD2</Filter>
+    </ClCompile>
+    <ClCompile Include="MD2Mesh.cpp">
+      <Filter>Graphics\MD2</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="rayCastTestComponent.cpp">
+      <Filter>Depricated</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioTestComponent.cpp">
+      <Filter>Depricated</Filter>
+    </ClCompile>
+    <ClCompile Include="BackgroundMusicComponent.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyAIComponent.cpp">
+      <Filter>Depricated</Filter>
+    </ClCompile>
+    <ClCompile Include="bulletParticle.cpp">
+      <Filter>Graphics\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleRenderer.cpp">
+      <Filter>Graphics\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="OrthoRenderer.cpp">
+      <Filter>Graphics\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="HudComponent.cpp">
+      <Filter>Graphics\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="HUD_Health.cpp">
+      <Filter>Graphics\UI\Unique HUD Logic</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OpenglUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="AssimpLoader.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshComponent.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="openglRenderer.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderingSystem.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="IronRiftsPhysicsSystem.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsSystem.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="RigidBodyComponent.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="AISystem.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AstarGraph.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="aStarPathFinder.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystem.h">
+      <Filter>Input/Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="MovementComponent.h">
+      <Filter>Input/Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioSystem.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="IrrKlangAudioSystem.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLGLTextureLoader.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="node.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>Low Level Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Low Level Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Low Level Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>Low Level Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraComponent.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="TestComponent.h">
+      <Filter>Depricated</Filter>
+    </ClInclude>
+    <ClInclude Include="InteractiveTestComponent.h">
+      <Filter>Depricated</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionSystem.h">
+      <Filter>Depricated</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLInputSystem.h">
+      <Filter>Input/Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="boundingVolume.h">
+      <Filter>Physics\Bounding Volumes</Filter>
+    </ClInclude>
+    <ClInclude Include="AABB.h">
+      <Filter>Physics\Bounding Volumes</Filter>
+    </ClInclude>
+    <ClInclude Include="OBB.h">
+      <Filter>Physics\Bounding Volumes</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>Physics\Bounding Volumes</Filter>
+    </ClInclude>
+    <ClInclude Include="MechanicsComponent.h" />
+    <ClInclude Include="PlayerMechanicsComponent.h" />
+    <ClInclude Include="AIMechanicsComponent.h" />
+    <ClInclude Include="md2model.h">
+      <Filter>Graphics\MD2</Filter>
+    </ClInclude>
+    <ClInclude Include="anorms.h">
+      <Filter>Graphics\MD2</Filter>
+    </ClInclude>
+    <ClInclude Include="MD2Mesh.h">
+      <Filter>Graphics\MD2</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="rayCastTestComponent.h">
+      <Filter>Depricated</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioTestComponent.h">
+      <Filter>Depricated</Filter>
+    </ClInclude>
+    <ClInclude Include="BackgroundMusicComponent.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyAIComponent.h">
+      <Filter>Depricated</Filter>
+    </ClInclude>
+    <ClInclude Include="bulletParticle.h">
+      <Filter>Graphics\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleRenderer.h">
+      <Filter>Graphics\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Depricated</Filter>
+    </ClInclude>
+    <ClInclude Include="OrthoRenderer.h">
+      <Filter>Graphics\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="HudComponent.h">
+      <Filter>Graphics\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="HUD_Health.h">
+      <Filter>Graphics\UI\Unique HUD Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="HudLogic.h">
+      <Filter>Graphics\UI\Unique HUD Logic</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{0a80085e-103c-4301-ad01-1cf863540784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{6b1208f6-5222-4391-acf2-fcf131a3ab67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI">
+      <UniqueIdentifier>{05b0d41a-ccf2-4967-8b08-357e091755de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input/Movement">
+      <UniqueIdentifier>{85b25e2c-3bdd-40ce-8199-0ab2d83b930f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Low Level Classes">
+      <UniqueIdentifier>{b916e8fd-def7-4ce5-a051-13255e464720}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{329f7057-2dfe-4157-ae02-72316fc67651}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Depricated">
+      <UniqueIdentifier>{1f4c8209-4ab4-497e-b91f-842fc2fe4509}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{01a19441-2453-46bd-ad3e-6b549638c45c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics\Bounding Volumes">
+      <UniqueIdentifier>{e0b17c42-4a18-4f2b-8013-3052895e907b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{d35912bd-cc94-4ca2-aa59-57b42689af39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\MD2">
+      <UniqueIdentifier>{0f947270-c9f7-465b-8226-cae4d1cd87ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Particles">
+      <UniqueIdentifier>{174921ac-3048-434a-8dfa-7983d14e50c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\UI">
+      <UniqueIdentifier>{4dbb2a57-5263-4840-85c3-12c8bba366c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\UI\Unique HUD Logic">
+      <UniqueIdentifier>{c3e2aa53-c74c-41d1-b746-e0b1896bc621}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

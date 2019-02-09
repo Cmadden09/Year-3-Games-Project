@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{B8EE99E2-97D5-4275-999D-1D7654EBB57A}</ProjectGuid>
+    <RootNamespace>blueirongreyhound</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\dev\irrKlang-1.6.0\include;..\..\dev\assimp-3.1.1-win-binaries\include;..\..\Dev\SDL2-2.0.5\include;..\..\Dev\glm-0.9.8.5;..\..\Dev\glew-2.0.0\include;..\..\dev\SDL2 plugins\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\dev\irrKlang-1.6.0\lib\win32-visualStudio;..\..\dev\assimp-3.1.1-win-binaries\lib32;..\..\Dev\SDL2-2.0.5\lib\x86;..\..\Dev\glew-2.0.0\lib\Release\Win32;..\..\dev\SDL2 plugins\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;opengl32.lib;assimp.lib;irrklang.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\Dev\SDL2 plugins\include;..\..\Dev\irrKlang-1.6.0\include;..\..\Dev\assimp-3.1.1-win-binaries\include;..\..\Dev\SDL2-2.0.5\include;..\..\Dev\glm-0.9.8.5;..\..\Dev\glew-2.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Users\Chloe\source\repos\Dev\SDL2 plugins\lib\x86;C:\Users\Chloe\source\repos\Dev\irrKlang-1.6.0\lib\Win32-visualStudio;..\..\Dev\assimp-3.1.1-win-binaries\lib32;..\..\Dev\SDL2-2.0.5\lib\x86;..\..\Dev\glew-2.0.0\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;opengl32.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\dev\irrKlang-1.6.0\include;..\..\dev\assimp-3.1.1-win-binaries\include;..\..\Dev\SDL2-2.0.5\include;..\..\Dev\glm-0.9.8.5;..\..\Dev\glew-2.0.0\include;..\..\dev\SDL2 plugins\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\dev\irrKlang-1.6.0\lib\win32-visualStudio;..\..\dev\assimp-3.1.1-win-binaries\lib32;..\..\Dev\SDL2-2.0.5\lib\x86;..\..\Dev\glew-2.0.0\lib\Release\Win32;..\..\dev\SDL2 plugins\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;opengl32.lib;assimp.lib;irrklang.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AABB.h" />
+    <ClInclude Include="AIMechanicsComponent.h" />
+    <ClInclude Include="AISystem.h" />
+    <ClInclude Include="anorms.h" />
+    <ClInclude Include="AssimpLoader.h" />
+    <ClInclude Include="AstarGraph.h" />
+    <ClInclude Include="aStarPathFinder.h" />
+    <ClInclude Include="AudioSystem.h" />
+    <ClInclude Include="AudioTestComponent.h" />
+    <ClInclude Include="BackgroundMusicComponent.h" />
+    <ClInclude Include="boundingVolume.h" />
+    <ClInclude Include="bulletParticle.h" />
+    <ClInclude Include="CameraComponent.h" />
+    <ClInclude Include="CollisionSystem.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="EnemyAIComponent.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="HudLogic.h" />
+    <ClInclude Include="HUD_Health.h" />
+    <ClInclude Include="OrthoRenderer.h" />
+    <ClInclude Include="HudComponent.h" />
+    <ClInclude Include="InputSystem.h" />
+    <ClInclude Include="IronRiftsPhysicsSystem.h" />
+    <ClInclude Include="IrrKlangAudioSystem.h" />
+    <ClInclude Include="MechanicsComponent.h" />
+    <ClInclude Include="MD2Mesh.h" />
+    <ClInclude Include="md2model.h" />
+    <ClInclude Include="MovementComponent.h" />
+    <ClInclude Include="node.h" />
+    <ClInclude Include="OBB.h" />
+    <ClInclude Include="ParticleRenderer.h" />
+    <ClInclude Include="PhysicsSystem.h" />
+    <ClInclude Include="PlayerMechanicsComponent.h" />
+    <ClInclude Include="rayCastTestComponent.h" />
+    <ClInclude Include="RigidBodyComponent.h" />
+    <ClInclude Include="SDLGLTextureLoader.h" />
+    <ClInclude Include="InteractiveTestComponent.h" />
+    <ClInclude Include="MeshComponent.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="openglRenderer.h" />
+    <ClInclude Include="OpenglUtils.h" />
+    <ClInclude Include="RenderingSystem.h" />
+    <ClInclude Include="SDLInputSystem.h" />
+    <ClInclude Include="Sphere.h" />
+    <ClInclude Include="System.h" />
+    <ClInclude Include="TestComponent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AIMechanicsComponent.cpp" />
+    <ClCompile Include="AISystem.cpp" />
+    <ClCompile Include="AssimpLoader.cpp" />
+    <ClCompile Include="AudioTestComponent.cpp" />
+    <ClCompile Include="BackgroundMusicComponent.cpp" />
+    <ClCompile Include="bulletParticle.cpp" />
+    <ClCompile Include="CameraComponent.cpp" />
+    <ClCompile Include="CollisionSystem.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="EnemyAIComponent.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="HUD_Health.cpp" />
+    <ClCompile Include="OrthoRenderer.cpp" />
+    <ClCompile Include="HudComponent.cpp" />
+    <ClCompile Include="InteractiveTestComponent.cpp" />
+    <ClCompile Include="IronRiftsPhysicsSystem.cpp" />
+    <ClCompile Include="IrrKlangAudioSystem.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MD2Mesh.cpp" />
+    <ClCompile Include="md2model.cpp" />
+    <ClCompile Include="MeshComponent.cpp" />
+    <ClCompile Include="MovementComponent.cpp" />
+    <ClCompile Include="OBB.cpp" />
+    <ClCompile Include="openglRenderer.cpp" />
+    <ClCompile Include="OpenglUtils.cpp" />
+    <ClCompile Include="ParticleRenderer.cpp" />
+    <ClCompile Include="PlayerMechanicsComponent.cpp" />
+    <ClCompile Include="rayCastTestComponent.cpp" />
+    <ClCompile Include="RigidBodyComponent.cpp" />
+    <ClCompile Include="SDLGLTextureLoader.cpp" />
+    <ClCompile Include="SDLInputSystem.cpp" />
+    <ClCompile Include="TestComponent.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
